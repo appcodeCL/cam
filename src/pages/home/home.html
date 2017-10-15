@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Obtener Libros
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content padding>
+  <button ion-button full (click)="captureImage()">IR AL LISTADO LIBROS</button><!--este boton deberia de llevar al listado de colegios-->
+  <button ion-button full (click)="captureImage()">SACAR FOTO PORTADA</button>
+  <button ion-button full (click)="sendEmail()">ENVIAR FOTOS</button>
+ 
+  <ion-card >
+    
+    <ion-card-content>
+      <img [src]="currentImage" *ngIf="currentImage" />
+    </ion-card-content>
+  </ion-card>
+</ion-content>
